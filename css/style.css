@@ -1,0 +1,225 @@
+/*importacion de fuente*/
+
+@font-face {
+  font-family: "viga";
+  src: url("/fonts/Viga-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*generales*/
+
+:root {
+  --color-verde: #25c281;
+}
+
+body {
+  background-color: #5b57f3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.7px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*contenedor principal*/
+
+#wrap {
+  background-color: white;
+  width: 78%;
+  min-height: 600px;
+  margin: 54px auto;
+  margin-left: 10%;
+  border-radius: 30px;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+}
+
+#header h1 {
+  font-family: "viga", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  margin: 40px;
+  margin-bottom: 10px;
+}
+
+#border_green {
+  background: var(--color-verde);
+  width: 40px;
+  height: 4px;
+  margin: 5px 48.7% 30px auto;
+}
+
+/* Boton monthly/annualy */
+
+.switch-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 4%;
+  padding: 4px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1), -2px -2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.switch-btn a {
+  display: block;
+  width: 39%;
+  height: 25px;
+  margin: 5px;
+  padding: 10px 15px 10px 15px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switch-btn a:first-child {
+  margin-left: 0;
+}
+
+div .actived {
+  color: white;
+  background-color: var(--color-verde);
+}
+div .disabled {
+  color: var(--color-verde);
+  background-color: #e7faf4;
+}
+
+/*Tabla de precios*/
+
+#table-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-bottom: 50px;
+}
+
+.table {
+  width: 24%;
+  height: 380px;
+  margin: 0 auto;
+  padding: 25px;
+  font-size: 12px;
+  border-radius: 45px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  transition: all 300ms ease;
+  color: #b4b3c1;
+
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+.table:hover {
+  transform: scale(1.05);
+}
+.table-content {
+  text-align: center;
+  position: relative;
+
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  transition: all 300ms;
+}
+
+.table-monthly,
+.table-annualy {
+  /*evitar cualquier situacion en que se visibilice la parte trasera*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: white;
+}
+
+.table-annualy {
+  transform: rotateY(180deg);
+}
+
+.rotate-table {
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/*Precios y Lista información*/
+.table-monthly-head,
+.table-annualy-head {
+  margin-top: -16px;
+}
+.table-monthly-head h2,
+.table-annualy-head h2 {
+  color: black;
+}
+.table-monthly-head h3,
+.table-annualy-head h3 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 34px;
+  color: black;
+}
+.table-content sub {
+  font-size: 10px;
+  color: #b4b3c1;
+}
+
+ul {
+  padding: 0;
+}
+.table-list li {
+  margin: 0 auto;
+  padding-bottom: 15px;
+  font-size: 10.5px;
+}
+
+.sign-up {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: var(--color-verde);
+  color: white;
+  font-size: 12px;
+  transition: 400ms all;
+}
+
+a:hover {
+  background: #2ce99a;
+}
+
+/*boton de GO UP*/
+
+.to-up{
+  display: block;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: var(--color-verde);
+  color: white;
+  border-radius: 20px;
+  display: none;
+}

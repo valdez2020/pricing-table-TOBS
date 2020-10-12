@@ -1,0 +1,109 @@
+@media(max-width: 1000px){
+    .table {
+        width: 22%;
+        height: 380px;
+        padding: 27px;
+    }
+    .switch-btn {
+        width: 220px;
+    }
+}
+@media(max-width: 870px){
+    #table-wrap {
+        margin-top: 20px;
+    }
+.table-monthly-head h3, 
+.table-annualy-head h3 {
+        font-size: 26px;
+    }
+    #table-wrap {
+        width: 90%;
+    }
+}
+@media(max-width: 790px){
+    #wrap {
+        width: 89%;
+        margin-left: 5%;
+    }
+}
+
+@media(max-width: 690px){
+    #header{
+        padding-top: 2px;
+    }
+    .switch-btn {
+        width: 210px;
+        margin-top: 6%;
+    }    
+    #table-wrap{
+        margin-top: 38px;
+    }
+    .table-monthly-head h3, 
+    .table-annualy-head h3 {
+            font-size: 23px;
+        }
+        .table-monthly-head h2,
+         .table-annualy-head h2 {
+             font-size: 1.4em;
+         }
+    .table{
+        height: 362px;
+    }
+}
+
+@media(max-width: 670px){
+    #wrap {
+        width: 94%;
+        margin-left: 3%;
+    }
+        #table-wrap {
+            width: 94%;
+    }
+    .table-list li {
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+    .table-monthly-head h3, 
+    .table-annualy-head h3 {
+        font-size: 20px;
+    }
+.table {
+    font-size: 16px;
+    width: 27%;
+    padding: 12px;
+}
+}
+@media(max-width: 670px){
+
+    .table {
+        width: 40%;
+        margin-top: 24px;
+    }
+    .table:last-child{
+        width: 60%;
+    }
+    .to-up{
+        display: block;
+    }
+}
+
+@media(max-width: 430px){
+    .table {
+        width: 75%;
+    }
+    .table:last-child{
+        width: 75%;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    #table-wrap {
+        margin-top: 8px;
+    }
+    
+.table-list li {
+font-size: 15px;
+padding-bottom: 5px;
+}
+
+}
