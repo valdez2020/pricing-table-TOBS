@@ -135,7 +135,7 @@ div .disabled {
 }
 
 .table-monthly,
-.table-annualy {
+.table-annualy{
   /*evitar cualquier situacion en que se visibilice la parte trasera*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -155,8 +155,7 @@ div .disabled {
 
 .rotate-table {
   transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+
 }
 
 /*Precios y Lista información*/
@@ -176,7 +175,8 @@ div .disabled {
   font-size: 34px;
   color: black;
 }
-.table-content sub {
+.table-content p {
+  display: inline;
   font-size: 10px;
   color: #b4b3c1;
 }
@@ -203,7 +203,7 @@ ul {
   transition: 400ms all;
 }
 
-a:hover {
+article a:hover {
   background: #2ce99a;
 }
 
