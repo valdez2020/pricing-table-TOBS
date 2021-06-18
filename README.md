@@ -1,5 +1,4 @@
 # pricing-table-TOBS
-Examen FRONT END de TOBS.
 
 ·Layout desarollado a la medida del diseño aportado por el equipo y aprobado por el cliente, destinado para la muestra de los distintos planes de servicios que ofrecen nuestro cliente en el mercado.
 
